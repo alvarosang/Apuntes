@@ -6,3 +6,5 @@ si el repositorio es nuevo poner los comandos que aparecen en la pagina con el u
 git push -u origin nombredelarama (si es la primera vez)
 git push -u (y se actualiza directamente)
 git log --oneline (para saber en que rama estamos main o master)
+
+https://www.youtube.com/watch?v=PW_A-lOpVV0&ab_channel=Bluuweb
