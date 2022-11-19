@@ -1,0 +1,8 @@
+git init -->iniciar un repositorio
+git status -s --> escaner de todo
+git add . --> lo añade todo
+git commit -m "El nmbre del repositorio"
+si el repositorio es nuevo poner los comandos que aparecen en la pagina con el url
+git push -u origin nombredelarama (si es la primera vez)
+git push -u (y se actualiza directamente)
+git log --oneline (para saber en que rama estamos main o master)

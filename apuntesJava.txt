@@ -1,0 +1,117 @@
+VARIABLES ENTERAS
+--------------------------------------------
+BYTE (8bits) < short (16 bits) < int (32 bits) < long (64 bits)
+
+NUMEROS REALES
+--------------------------------------------
+float : valor por defecto 0.0f
+double :  "     "    "    0.0d
+
+OPERADORES
+--------------------------------------------
+Prefix/ postfix : -- ++ (expresion++ or ++expresion , dependiendo de la posicion se evalua primero la expresion y despues el operador)
+
++=: op1+= op2 == op1 = op1 + op2
+-=
+*=
+/=%=
+Mismo comportamiento todos
+
+TRATAMIENTO A NIVEL D BITS
+--------------------------------------------
+AND &, OR ^ (exclusivo), OR | (inclusivo)
+~ cambia cada 0 por 1 y viceversa
+
+BOOLEANOS 
+--------------------------------------------
+UNARIO ! negacion del operando
+BINARIO && Realiza AND
+BINARIO || Realiza OR
+TERNARIO?: Es el unico operador ternario, si el primero operando es verdadero, devuelve el calor del segundo ; en otro caso devuelve el tercero
+
+CODIGO PARA OPERADOR TERNARIO
+--------------------------------------------
+int result;
+boolean condition = true;
+result = condition ? valor1 : valor2;
+// esto quiere decir la definicion mas arriba, como el valor booleano es true devuelve valor1, sino devolvería valor2
+
+LOGICOS RELACIONALES
+--------------------------------------------
+== , != , < , <= , >= , >
+
+TIPOS DE DATOS CARACTERES
+--------------------------------------------
+char : un solo caracter a
+java.lang.String : para cadenas de caracteres INMUTABLES "Hola"
+
+CASTINGS 
+--------------------------------------------
+System.out.println((double)5/9); // y te devolveria el valor double aunque la operacion sea entera
+
+ESTRUCTURAS DE DECISION
+--------------------------------------------
+if / else
+
+if (num1 > num2) {
+
+} else {" asi se escribe las dos estructuras de decision";
+}
+
+if - else - if 
+
+if (num1<num2){
+} else if ( condicion ) {
+	
+} else if() {
+
+}else (condicion) {}
+
+SWITCH // si hay muchas condiciones para no estas con if-else-if
+
+int mes = 8;
+String  string ;
+
+switch (mes){
+	case 1: string = "Enero ";
+	break;
+	case 2: string = "febrero";
+	break; // siempre se utiliza break para que siga ejecutandose el codigo
+	.......
+	case 8 : string = " Agosto ";
+	....... // aqui van el resto de meses
+	default: string = " mes no valido ";
+	break; // el caso default es para cuando introducen un caso no valido
+}
+
+si las condiciones tienen la misma condicion se pueden ejecutar todas a la vez, por ejemplo con que meses tienen 31 dias, 30 o 28 dias 
+int mes=2;
+int numDias = 0;
+
+switch (mes) {
+case 1:
+case 3:
+case 5:
+case 7:
+case 8:
+case 10:
+case 12:
+	numDias= 31;
+	break;
+case 4:
+case 6:
+case 9:
+case 11:
+	numDias = 30;
+	break;
+case 2:
+	numDias = 28;
+	break;
+default:
+	System.out.println("mes no valido")
+	break;
+}
+System.out.println("Numero de dias = " + numDias);
+
+se puede tambien ver si se cumple la condicion con caracteres y se ponen entre comillas  {case "Enero":}
+
