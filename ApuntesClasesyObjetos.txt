@@ -1,1 +1,24 @@
 ApuntesObjetos
+-------------------
+Estructura y comportamiento son dos cosas a tener en cuenta de los objetos
+la clase tiene notacion UpperCamelCase
+
+Persona persona = new Persona()
+Tipo(clse) NombreDelObjeto = OperadordeInstancia Constructor
+
+CONSTRUCTORES
+--------------
+
+GETTERS Y SETTERS
+------------------
+
+modificadorDeAtributo tipoAtributo nombreAtributo;
+private/public		char/int/etc   "camelCase"
+
+METODO
+
+modificadorDeMetodo  tipoRetorno nombreMetodo(tipo1 param1,....){}
+public/private/protected  void/char/etc  nombre camelCase
+
+CICLO DE VIDA DE UN OBJETO
+---------------------------
