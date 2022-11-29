@@ -1,0 +1,5 @@
+Arrays
+-------
+
+int[] unArray = new int[10]
+tipoDeDato nombreArray = intanciacion DatoConTamaño
